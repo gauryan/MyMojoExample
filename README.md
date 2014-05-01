@@ -1,7 +1,7 @@
-<img src="http://images.tempi.re/mojoexample_screenshot-20120803-231547.jpg" />
 
 # Purpose
 
+- [MojoExample](https://github.com/tempire/MojoExample/)이 2012년 이후로 업데이트되지 않아서, 에러나는 부분을 수정함.
 - [Introduction](http://tempi.re/mojolicious-full-and-lite-apps-understanding-the-difference)
 - Compare a [full Mojolicious app](https://github.com/tempire/MojoExample/) to a [lite app](https://github.com/tempire/MojoExample/blob/master/mojolite) with the same functionality.
 - See an example of DBIx::Class usage with Mojolicious
