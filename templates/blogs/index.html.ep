@@ -1,0 +1,34 @@
+% layout 'default';
+% title 'Phased Blog';
+
+%= t ul => id => 'blogs' => begin
+
+  % for my $blog (@$blogs) {
+
+    %= t li => id => $blog->url_title, class => 'blog snippet' => begin
+      %= t a => name => 'id'.$blog->id
+      %= t a => name => $blog->url_title
+      %= t h2 => begin
+        %= link_to $blog->title => '/blogs/'.$blog->url_title, class => 'more'
+      % end
+
+      %= t div => class => 'tags' => begin
+        % for my $tag ($blog->tags) {
+          %= t span => class => 'tag' => $tag->name
+        % }
+      % end
+
+      % if ($blog->subtitle) {
+        %= t h3 => class => 'subtitle' => $blog->subtitle
+      % }
+
+      %= t h3 => class => 'time', title => $blog->time_since => $blog->created_time_string
+
+      %= t div => class => 'content snippet' => begin
+        %= $blog->snippet
+        %= link_to 'More' => '/blogs/'.$blog->url_title, class => 'more'
+      %= end
+    % end
+  % }
+
+% end

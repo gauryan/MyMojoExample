@@ -1,0 +1,9 @@
+[Thu May  1 11:50:33 2014] [info] Listening at "http://*:8080".
+Server available at http://127.0.0.1:8080.
+[Thu May  1 11:51:00 2014] [info] Listening at "http://*:8080".
+[Thu May  1 11:51:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu May  1 11:51:25 2014] [debug] GET "/".
+[Thu May  1 11:51:25 2014] [debug] Routing to controller "MojoFull::Home" and action "index".
+[Thu May  1 11:51:25 2014] [debug] Rendering template "home/index.html.ep".
+[Thu May  1 11:51:25 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu May  1 11:51:25 2014] [debug] 200 OK (0.030053s, 33.275/s).

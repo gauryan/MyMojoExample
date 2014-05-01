@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29402272-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="header">
+  <img class="profile" src="/images/bender_promo.png" />
+  <a class="home" href="/" alt="Home"></a>
+
+  % if ($self->req->url ne '/') {
+    <div class="fb_status">
+      <span class="load statii"></span>
+      <span class="time_since"></span>
+      <span class="source"></span>
+    </div>
+  % }
+
+  <ul class="toc">
+    <li><a href="/blogs">Blog</a></li>
+    <li><a href="/photos">Photos</a></li>
+  </ul>
+</div>
+
+<div id="main">
+   <div id="box-top"></div>
+
+  <div id="content">
+    <%= content %>
+  </div>
+
+  <div id="box-bottom"></div>
+</div>
+
+<div id="footer">
+   <ul>
+      <li><a href="http://mojolicio.us">Mojolicious</a></li>
+      <li><a href="http://mojocasts.com">Mojocasts</a></li>
+      <li><a href="http://github.com/tempire/mojoexample">Mojo Example</a></li>
+      <li><a href="http://github.com/kraih/mojo">Github</a></li>
+      <li><a href="http://search.cpan.org/dist/Mojolicious/">CPAN</a></li>
+      <li><a href="http://zombiedolphin.com">Zombie Dolphin</a></li>
+   </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+
+</body>
+</html>
